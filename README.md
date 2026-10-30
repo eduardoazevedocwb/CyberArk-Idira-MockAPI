@@ -20,13 +20,13 @@ It is not an official CyberArk product, is not intended for production use, does
 ----------------------------------------------
 
 
-![Architecture diagram](docs/architecture.png)
+![Architecture](docs/architecture.png)
 
 
 ----------------------------------------------
 
 
-![Architecture diagram](docs/diagram.png)
+![Diagram](docs/diagram.png)
 
 
 ----------------------------------------------
