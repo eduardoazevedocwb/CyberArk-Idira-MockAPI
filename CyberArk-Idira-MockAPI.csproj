@@ -32,4 +32,8 @@
     <ProjectReference Include="..\CyberArk-Idira-MockApi.Infrastructure\CyberArk-Idira-MockApi.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="docs\" />
+  </ItemGroup>
+
 </Project>
