@@ -17,54 +17,19 @@ It is not an official CyberArk product, is not intended for production use, does
 - **Data safety:** fictional seed data only; mock secrets must not be treated as real credentials or stored in logs.
 
 
-    CyberArk-Idira-MockAPI/
-    ├── CyberArk-Idira-MockAPI/                 # API (presentation layer)
-    │   ├── Properties/
-    │   │   └── launchSettings.json
-    │   ├── Controllers/
-    │   │   ├── AccountController.cs
-    │   │   ├── AuditEventController.cs
-    │   │   ├── GroupController.cs
-    │   │   ├── PlatformController.cs
-    │   │   ├── RoleController.cs
-    │   │   ├── SafeController.cs
-    │   │   ├── SafeMemberController.cs
-    │   │   └── UserController.cs
-    │   ├── app.db / app.db-shm / app.db-wal    # SQLite database
-    │   ├── appsettings.json
-    │   ├── Dockerfile
-    │   ├── Program.cs
-    │   └── README.md
-    │
-    ├── CyberArk-Idira-MockApi.Application/     # Use cases
-    │   ├── Commands/        # Create/Update commands per entity + ChangeUserPasswordCommand
-    │   ├── Dtos/            # Account, AuditEvent, Group, Platform, Role, Safe, SafeMember, User
-    │   ├── Interfaces/      # I*Service contracts + IRepository
-    │   ├── Mappings/        # Entity <-> DTO mappings
-    │   └── Services/        # Account, AuditEvent, Group, Platform, Role, Safe, SafeMember, User
-    │
-    ├── CyberArk-Idira-MockApi.Domain/          # Core business model
-    │   ├── Entities/
-    │   │   ├── Account, AccountLink, AccountSecretVersion
-    │   │   ├── ApiToken, AuditEvent, BulkUploadJob, DiscoveredAccount
-    │   │   ├── Group, GroupMember, Platform
-    │   │   ├── Role, Safe, SafeMember
-    │   │   └── User, UserRole
-    │   └── Enum/
-    │       └── RoleName.cs
-    │
-    └── CyberArk-Idira-MockApi.Infrastructure/  # Data access
-        ├── Configurations/                     # EF Core entity configurations (one per entity)
-        ├── Data/
-        │   └── ApiDbContext.cs
-        ├── Migrations/
-        │   ├── 20261028230630_InitialCreate.cs
-        │   └── ApiDbContextModelSnapshot.cs
-        └── Repositories/
-            └── Repository.cs
+----------------------------------------------
 
 
 ![Architecture diagram](docs/architecture.png)
+
+
+----------------------------------------------
+
+
+![Architecture diagram](docs/diagram.png)
+
+
+----------------------------------------------
 
 
 ## Domain concepts
